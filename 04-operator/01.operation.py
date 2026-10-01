@@ -28,6 +28,7 @@
 # r7 = num1 ** 3
 # print(f'{num1}^3 = {r7}')
 
+# 정수 / 정수 = 실수
 print(7/3)
 print(6/3)
 print(6.0/3.0)
