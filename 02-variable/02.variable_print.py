@@ -1,14 +1,14 @@
 # str() 함수 : 데이터를 문자열로 변환
-# 숫자 + 문자열 => error
-# str(숫자) + 문자열
 
 num1 = 5
-num2 = 7.7
+num2 = 5.7
 b1 = True
 print(num1, num2, b1, sep=', ')
 
-# print('num1 = ' + num1)  # error
+# print('num1 =' + num1)  # error 자료형 불일치
 print('num1 = ' + str(num1))
+print(f'num1 = {num1}')
 
+# 연산자 우선순위는 수학과 동일
 y = 2.5 * 2 ** 2 + 3.3 * 2 + 6
 print(y)

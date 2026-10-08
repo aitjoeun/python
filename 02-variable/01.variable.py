@@ -1,47 +1,45 @@
 # 변수 : 어떤 자료형이든 상관없이 넣을 수 있다
 var1 = 'Hello Python'
 print(var1)
-print(id(var1))  # 주소 출력해주는 함수
+print(id(var1)) # 주소를 출력하는 함수
 
 var1 = 100
 print(var1)
 print(id(var1))
+print('-' * 30)
 
-# 변수명 지정
+# 변수명은 예약어를 쓸 수없다.
 # 변수가 무엇을 가리키는지 알 수 있는 이름으로 작명
-# 예약어는 변수명으로 쓸 수 없다
 
 # python의 자료의 크기는 상관없다
 num1 = 100
-num2 = 27893746238942938472734637461873468372468213746283746827346
-num3 = 3.2837348399328
-
-c = '홍길동 아무개'
-s = 'Hello world!!!'
-b = True
-
+num2 = 28192849387461982346392847923847293847293
+num3 = 39.29383923874789383
 print(num1)
 print(num2)
 print(num3)
-print(c)
-print(s)
-print(b)
-print('-' * 30)
-
-print('num1 type = ', type(num1))
+print('num1 type =', type(num1))
 print(f'num2 type = {type(num2)}')
 print(f'num3 type = {type(num3)}')
-print(f'c type = {type(c)}')
-print(f's type = {type(s)}')
-print(f'b type = {type(b)}')
 print('-' * 30)
 
-a = 1
-b = 2
-c = 3
+a = '박수영 이무기'
+b = 'Hello world!!!'
+c = True
+print(a)
+print(b)
+print(c)
+print(f'a type = {type(a)}')
+print(f'b type = {type(b)}')
+print(f'c type = {type(c)}')
 
-d, e, f = 1, 2, 3
-print(d, e, f)
+d = 7
+e = 9
+f = 5
 
-g, h, i = '더조은', False, 3.5485
+# int d=1, e=5, f=6
+g, h, i = 1, 2, 3
 print(g, h, i)
+
+j, k, m = '문자', False, 3.14
+print(j, k, m)

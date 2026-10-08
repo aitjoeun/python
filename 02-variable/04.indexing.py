@@ -1,46 +1,53 @@
-# indexing
+# index번호 +일때는 앞에서 부터 0부터 시작
+# index번호 -일때는 뒤에서 부터 -1부터 시작 
+st1 = 'abcdefghijk'
 
-str1 = 'abcdefghijk'
-print(str1[0])
-print(str1[2])
+print(st1[0])
+print(st1[3])
+print(st1[8])
 print('-' * 30)
 
-# 음수는 뒤에 부터, -1부터 시작
-print(str1[-1])
-print(str1[-4])
+print(st1[-3])
+print(st1[-1])
+print(st1[-4])
 print('-' * 30)
 
-# slicing
-# [시작:끝:step] => step생략가능 생략하면 default = 1
-#                   끝은 포함 안함        
-print(str1[1:4])
-print(str1[:3])
-print(str1[2:])
-print(str1[:])
+# 슬라이싱(slicing)
+# [시작:끝:step] -> step생략하면 1씩 증가
+print(st1[1:3])
+print(st1[:3])
+print(st1[2:])
+print(st1[:])  # print(st1) 같은말
 print('-' * 30)
 
-print(str1[1:9:2])
-print(str1[1:9:3])
-print(str1[::3])
-print(str1[::-3])  # 순서를 뒤집어서 가져올 때
-print(str1[5:1:-1])
-print(str1[-1:-6:-1])
+print(st1[1:9:2])
+print(st1[1:9:3])
+print(st1[::3])
+print(st1[::-1])  # 순서를 뒤집을 때 사용
+print(st1[::-2])
+print(st1[5:1:-2])
+print(st1[-1:-6:-1])
 print('-' * 30)
 
 # 문자열 연결하기 : +
-str2 = 'xyz'
-str3 = str1 + str2
-print(str3)
+st2 = 'xyz'
+st3 = st1 + st2
+print(st1)
+print(st2)
+print(st3)
 
 # 문자열 반복하기 : *
-str4 = str2 * 3
-print(str4)
-
-# 문자열의 갯수 확인
-print(len(str1))
+st4 = st2 * 3
+print(st4)
 print('-' * 30)
 
-# 문자열은 인덱싱으로 문자열을 부분적으로 변경못함.
-#  str1[0] = 'z'
-str1 = 'z' + str1[1:]
-print(str1)
+# 문자열의 문자개수 확인
+print(len(st1))
+
+# indexing에서는 문자를 변경못함.
+# st1[0] = 'z'  # error
+st1 = 'z' + st1[1:]
+print(st1)
+
+st1 = st1[:2] + '한글' + st1[4:]
+print(st1)
