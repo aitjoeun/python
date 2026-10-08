@@ -8,12 +8,12 @@ not in : 어떤 데이터가 특정 데이터안에 없는지 검사
     -> True : 없다
     -> False : 있다
 '''
-str = 'abcdefg'
+str = 'abcdefghi'
 print('bc' in str)
-print('df' in str)
-print('xy' in str)
-print('-' * 20)
+print('bf' in str)
+print('mn' in str)
+print('-' * 30)
 
 print('bc' not in str)
-print('df' not in str)
-print('xy' not in str)
+print('bf' not in str)
+print('mn' not in str)

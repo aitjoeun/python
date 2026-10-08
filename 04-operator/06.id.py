@@ -8,6 +8,7 @@ is not : 변수의 주소값이 다른지 검사
     -> False : 주소가 같다
 id() : 주소값 확인시 사용
 '''
+
 a = 1
 b = 2
 print(f'a의 주소 : {id(a)}')
@@ -17,10 +18,7 @@ print('-' * 30)
 
 c = 1
 print(f'c의 주소 : {id(c)}')
-print(a is not c)
+print(a is c)
 
-b = 1  # a,b,c의 주소가 같다
+b = 1
 print(f'b의 주소 : {id(b)}')
-
-d = 7
-print(f'd의 주소 : {id(d)}')

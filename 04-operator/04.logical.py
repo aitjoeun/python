@@ -12,9 +12,8 @@ num1 = 100
 num2 = 200
 x = 7
 y = 3
-
 f_result = num1 >= num2  # F
-t_result = x >= y       # T
+t_result = x >= y  # T
 print(f'f_result = {f_result}, t_result = {t_result}')
 
 and_result = f_result and t_result
@@ -24,8 +23,7 @@ print(f'f_result or t_result = {or_result}')
 
 print(f'f_result not = {not f_result}')
 
-xor = f_result != t_result
-print(xor)
-
 xor = f_result ^ t_result
+xor2 = f_result ^ f_result
 print(xor)
+print(xor2)
