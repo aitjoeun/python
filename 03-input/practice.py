@@ -32,3 +32,10 @@ result = f'''오늘 {stadium}에서 야구경기가 열렸습니다
 print('=' * 50)
 print(result)
 print('=' * 50)
+
+result = '''오늘 %s에서 야구경기가 열렸습니다
+%s과 %s의 치열한 공방전이 펼쳐졌습니다
+결국 %s은 %s를 %s으로 이겼습니다''' %(stadium,winner,loser,winner,loser,score)
+print('=' * 50)
+print(result)
+print('=' * 50)
