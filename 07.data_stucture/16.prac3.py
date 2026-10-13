@@ -8,7 +8,7 @@ inventory = {
 }
 문1. 가게에 포도('grape')가 12개 새로 들어왔다. 추가하기
 문2. 손님이 망고('mango')가 있는지 물어보았다. 망고가 있으면
-    재고 출력 없으면 '재고가 없습니다' 출력 get()메서드 사용
+    재고 출력 없으면 '재고가 없습니다'
 문3. 오늘 마감 전, 현재 가게에 남아있는 모든 과일의 이름과 재고 수량을 
     아래 보기와 같은 형식으로 한 줄씩 출력하는 코드를 작성(단, items() 메서드와 for문, f-string을 반드시 사용)
     [출력 보기]
@@ -16,3 +16,33 @@ inventory = {
     과일: banana | 재고: 8개
     . . .
 '''
+
+inventory = {
+    'apple': 15,
+    'banana': 8,
+    'orange': 20,
+    'melon': 3,
+    # 'mango':10
+}
+
+# 문1. grape'가 12개
+in_fr = 'grape'
+if in_fr in inventory:
+    inventory[in_fr] += 12
+else :
+    inventory[in_fr] = 12
+print(inventory)
+
+# 문2: mango
+in_fr = 'mango'
+if in_fr in inventory:
+    print('망고가 있습니다 재고는', inventory['mango'])
+else :
+    print('망고가 없습니다')
+
+mango = inventory.get('mango', '재고가 없습니다')
+print(mango)
+
+# 문3
+for fruit, count in inventory.items():
+    print(f'과일: {fruit} | 재고: {count}개')
