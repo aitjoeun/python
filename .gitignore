@@ -175,5 +175,5 @@ pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/python
 
-# 파이썬 가상환경
-my_ven/
+# 내가만든 가상환경
+my_ven
