@@ -10,4 +10,8 @@ print_info(name='김미영', age='23', city='Seoul')
 
 # 딕셔너리를 넘겨줘도 됨
 info = {'name' : '이사람', 'age' : 25, 'city' : 'Gyeongi-do'}
-print_info(**info)
+print_info(**info)  # **는 unpacking 해서 넘겨줌
+# print_info(info) error info라는 딕셔너리 객체 단1개를 전달
+
+# **info 하면 아래와 같이 들어감
+# print_info(name='이사람', age=25, city='Gyeongi-do')

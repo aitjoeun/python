@@ -38,7 +38,7 @@ def cal_bill(*money):
         total += price
     return total
 
-print(cal_bill([13000, 9000]))
+print(cal_bill(13000, 9000))
 print(cal_bill(13000, 9000, 15000, 12000))
 print('-'*30)
 
@@ -61,3 +61,4 @@ signup(
     email='abcd@test.com',
     city='인천'
 )
+
