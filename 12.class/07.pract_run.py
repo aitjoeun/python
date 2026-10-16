@@ -12,5 +12,25 @@
             합계 : 177
             평균 : 87.7
     실행파일 : 2명으로 부터 입력받아
-                2명 출력하기
+                2명 출력하기 
 '''
+# 문 1
+from triscore import Triangle as t
+b = int(input('밑변 : '))
+h = int(input('높이 : '))
+
+area = t()
+print(area.getArea(b, h))
+
+# 문2
+from triscore import Score as sc
+sc1 = sc()
+sc2 = sc()
+
+sc1.set()
+sc2.set()
+
+print('='*30)
+sc1.output()
+print()
+sc2.output()
