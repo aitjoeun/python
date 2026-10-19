@@ -17,3 +17,20 @@
     - 본 클래스에서는 ABC클래스를 상속 받아야 한다.
         class Kim(ABC):
 '''
+from programmer import Programmer
+from famer import Famer
+from actor import Actor
+
+kim = Programmer('김수철', 31, 'python')
+kim.introduce()
+
+park = Actor('박수철', 28, '오딧세이')
+park.introduce()
+
+# lee = Famer('이수철', 29, '당근')
+# lee.intorduce()
+# lee.show()
+
+# 추상클래스는 객체 생성 못함
+# from person import Person
+# person = Person()

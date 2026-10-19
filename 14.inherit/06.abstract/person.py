@@ -23,4 +23,9 @@ class Person(ABC):
     @abstractmethod
     def introduce(self):
         pass
+
+    # 추상메서드는 자식 클래스에서 오버라이딩 했는가만 검사. 구현해도 실행가능함 
+    # @abstractmethod
+    # def info(self):
+    #     print('이 메서드는 자기소개 입니다')
     
