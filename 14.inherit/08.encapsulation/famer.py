@@ -3,8 +3,12 @@ from person import Person
 class Famer(Person):
     def __init__(self, name, age, vegetable):
         super().__init__(name, age, job='famer')
-        self.vegetable = vegetable
+        self.__vegetable = vegetable
 
     def introduce(self):
         super().hello()
-        print(f'나는 {self.vegetable}을 키웁니다')
+        print(f'나는 {self.__vegetable}을 키웁니다')
+        print(f'나의 이름은 {self.get_name()}이고, 나이는 {self.get_age()}세 입니다')
+
+    def get_vegetable(self):
+            return self.__vegetable

@@ -10,3 +10,14 @@
 - main
     직원들을 리스트에 저장하고 반복문으로 급여를 출력한다.
 '''
+from employee import FullTimeEmployee, PartTimeEmployee
+emps = [
+    FullTimeEmployee('더조은', 'tj001', 4000000),
+    PartTimeEmployee('황현희', 'tj002', 11000, 80),
+    FullTimeEmployee('이만수', 'tj003', 3500000)
+]
+
+for emp in emps:
+    emp.show_info()
+    print(f'급여 : {emp.calculate_salary():,}원')
+    print()
