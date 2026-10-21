@@ -23,3 +23,23 @@ print(f'arr1 : {arr1}')
 print('-'*30)
 
 # 2차원 배열의 슬라이싱
+# 배열명[행슬라이싱, 열슬라이싱]
+# 배열명[0:2, 1:3]
+print(f'arr2 :\n {arr2}')
+print(arr2[0:2, 1:3])
+
+print(arr2[:2, :2])
+print('-'*30)
+
+# 특정행의 특정열만 추출
+print(arr2[1][0:2])
+print('-'*30)
+
+# 특정 열만 추출
+print(arr2[:, 2])
+print(arr2[:, [1,2]])
+print('-'*30)
+
+# 특정 행만 추출
+print(arr2[1, :])
+print(arr2[[1,2], :])
