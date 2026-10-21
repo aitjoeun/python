@@ -18,6 +18,8 @@ except ValueError:
     print('숫자만 입력해야 됩니다')
 except ZeroDivisionError as e:
     print(f'0으로 나눌 수 없음. (에러 메시지 : {e})')
+except:
+    print('오류발생')
 
 try:
     f = open('data.txt', 'r')
